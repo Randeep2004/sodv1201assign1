@@ -1,3 +1,4 @@
+
 // Staff data provided
 var dataSet = [   
     [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
@@ -44,10 +45,16 @@ function displayStaff() {
     staffListElement.innerHTML = "";
     dataSet.forEach(function(employee) {
         var listItem = document.createElement("li");
-        listItem.textContent = `${employee[0]} - ${employee[5]}`;
+        listItem.innerHTML = `Employee Name: ${employee[0]}<br>
+                               Designation: ${employee[1]} <br>
+                              City: ${employee[2]} <br>
+                               Employee ID: ${employee[3]} <br>
+                               Joining Date: ${employee[4]} <br>
+                               Salary: ${employee[5]}`;
         staffListElement.appendChild(listItem);
     });
 }
+
 
 // Function to sort staff by name or salary
 function sortBy(key) {
@@ -55,8 +62,8 @@ function sortBy(key) {
         if (key === 'name') {
             return a[0].localeCompare(b[0]); // Sort by name
         } else if (key === 'salary') {
-            var salaryA = parseFloat(a[5].replace('$', '').replace(',', ''));
-            var salaryB = parseFloat(b[5].replace('$', '').replace(',', ''));
+            var salaryA = parseFloat(a[5].replace('$', '').replace(/,/g, ''));
+            var salaryB = parseFloat(b[5].replace('$', '').replace(/,/g, ''));
             return salaryA - salaryB; // Sort by salary
         }
     });
@@ -65,3 +72,19 @@ function sortBy(key) {
 
 // Initial display of staff list
 displayStaff();
+
+
+// Create a button element
+var backButton = document.createElement("button");
+
+// Set button text
+backButton.textContent = "Go Back";
+
+// Add event listener to handle click event
+backButton.addEventListener("click", function() {
+    // Go back to previous page
+    window.history.back();
+});
+
+// Append the button to the document body or any other desired element
+document.body.appendChild(backButton);
