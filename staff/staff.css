@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    color: black;
+    align-items: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    margin: 22px;
+    border: #333;
+    border: 2px;
+    font-size: large;
+    border-radius: 12%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    margin-left: 70px;
+}
+
+footer{
+    bottom:0;
+    right:0;
+    width: 98%;
+    position:static;
+    text-align:center;
+    background-color:#abc6a6 ;
+    font-size: large;
+    font-weight: 600;
+    padding: 20px;
+}

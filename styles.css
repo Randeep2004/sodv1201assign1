@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -30,12 +31,22 @@ nav {
 }
 
 nav ul {
+=======
+nav {
+    background-color: #abc6a6;
+    padding: 10px;
+    text-align: center;
+}
+ul {
+>>>>>>> 7c644a472bbd4089801e85cc524e1bb4256e33f9
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content:center;
 }
 
+<<<<<<< HEAD
 nav ul li {
     display: inline;
     margin: 0 15px;
@@ -96,3 +107,41 @@ footer {
         padding: 20px;
     }
 }
+=======
+li {
+    margin: 0 15px;
+}
+
+.nav{
+    text-decoration: none;
+    font-weight: bold;
+}
+a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #e7ecf0;
+    color: #c23c28;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right:30px;
+}
+footer{
+    bottom:0;
+    right:0;
+    width: 97.5%;
+    position:fixed;
+    text-align:center;
+    background-color:#abc6a6 ;
+    font-size: large;
+    font-weight: 600;
+    padding: 20px;
+}
+img{
+    align-items: center;
+    display:flex;
+    margin-left: 20%;
+}
+>>>>>>> 7c644a472bbd4089801e85cc524e1bb4256e33f9
