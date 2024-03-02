@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    padding: 0;
+
+    background-color: antiquewhite;
+
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #35424a;
+    color: #fff;  
+    line-height: 1.6;
+}
+
+button {
+    margin: 10px;
+}
+
+ul .buttons{
+    display: inline;
+    background-color: #35424a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.name 
+{
+    line-height: 2;
+    color: #35424a;
+    box-decoration-break: clone;
+}
+
+.salary 
+{
+    line-height: 2;
+    color: #35424a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    background-color: #35424a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
