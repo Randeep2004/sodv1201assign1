@@ -45,5 +45,15 @@ footer{
 img{
     align-items: center;
     display:flex;
-    margin-left: 20%;
+    margin-left: 2%;
+   
+    border-radius: 15px;
+  
+}
+section{
+    display: flex;
+}
+.paragraph{
+padding: 15px;
+background-color: antiquewhite;
 }
