@@ -52,7 +52,7 @@ img{
 }
 section{
     display: flex;
-    font-size: large;
+    font-size:medium;
 }
 .paragraph{
 padding: 15px;
