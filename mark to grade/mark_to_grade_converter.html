@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark to Grade Converter</title>
     <script src="mark_to_grade_converter.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Mark to Grade Converter</h1>
-    <label for="mark-input">Enter Mark:</label>
-    <input type="number" id="mark-input">
+    <label for="entermarks">Enter Marks:</label>
+    <input type="number" id="entermarks">
     <button onclick="convertMark()">Convert</button>
     <p id="result"></p>
-    <p id="validation-message"></p>
+    <p id="Validation"></p>
+
+    <footer>
+        <p>&copy; Prashant pandey - 2024</p>
+
+        <p id="datetime"></p>
+    </footer>
 </body>
+
 </html>

@@ -1,25 +1,34 @@
-function convertMark() {
-    var mark = document.getElementById("mark-input").value;
-    var resultElement = document.getElementById("result");
-    var validationMessageElement = document.getElementById("validation-message");
 
+function convertMark() {
+    // Fetch the entered mark value from the input field
+    var mark = document.getElementById("entermarks").value;
+
+    // Elements for displaying result and validation message
+    var resultElement = document.getElementById("result");
+    var validationMessageElement = document.getElementById("Validation");
+
+    // Check if the entered mark is within the valid range (0 to 100)
     if (isNaN(mark) || mark < 0 || mark > 100) {
-        validationMessageElement.textContent = "Invalid mark. Please enter a number between 0 and 100.";
+        // Display a message for invalid input
+        validationMessageElement.textContent = "Please enter a mark between 0 and 100.";
+        // Clear any previous result
         resultElement.textContent = "";
         return;
     }
 
-    if (mark > 90) {
-        resultElement.textContent = "Grade A";
-    } else if (mark > 80) {
-        resultElement.textContent = "Grade B";
-    } else if (mark > 70) {
-        resultElement.textContent = "Grade C";
-    } else if (mark > 50) {
-        resultElement.textContent = "Grade D";
+    // Convert the mark into a grade based on a unique grading scale
+    if (mark >= 90) {
+        resultElement.textContent = "You got grade A!";
+    } else if (mark >= 80) {
+        resultElement.textContent = "You got grade B!";
+    } else if (mark >= 70) {
+        resultElement.textContent = "You got grade C!";
+    } else if (mark >= 50) {
+        resultElement.textContent = "You got grade D!";
     } else {
-        resultElement.textContent = "Grade F";
+        resultElement.textContent = "You got grade F. Go and study.";
     }
 
+    // Clear any previous validation message
     validationMessageElement.textContent = "";
 }

@@ -1,20 +1,32 @@
-/* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
+
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+
 header {
-    background-color: #b76565;
+    background-color: #35424a;
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
 }
 
+
 nav {
-    background-color: #5568ba;
+    background-color: #52616b;
+    padding: 15px 0;
 }
 
 nav ul {
@@ -26,20 +38,61 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
-    font-size: medium;
+    margin: 0 15px;
 }
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd166;
+}
+
 
 main {
-    padding: 20px;
+    padding: 40px;
+    text-align: center;
 }
 
+.pictures {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.intro {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: left;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 footer {
-    background-color: #8e3c83;
+    background-color: #35424a;
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+    main {
+        padding: 20px;
+    }
 }

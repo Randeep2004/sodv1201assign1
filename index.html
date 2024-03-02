@@ -1,3 +1,10 @@
+<!-- 
+* @name: Assignement1
+* @Course Code: SODV1201
+* @class: Software Development Diploma program.
+* @author: Prashant pandey.
+*/
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,22 +18,35 @@
         <h1>My Profile</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mark to grade/mark_to_grade_converter.html">Mark to Grade Converter</a></li>
-                <li><a href="staff/staff.html">Staff</a></li>
-                <li><a href="weather\weather.html">Weather</a></li>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="mark to grade/mark_to_grade_converter.html" target="_blank">Mark to Grade Converter</a></li>
+                <li><a href="staff/staff.html" target="_blank">Staff</a></li>
+                <li><a href="weather/weather.html" target="_blank">Weather</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <img src="profile-picture.jpg" alt="My Picture" id="profile-picture">
-            <p>About me...</p>
+        <section class="pictures">
+            <img src="IMG_20230901_164633_166.jpg" alt="My Picture" id="profile-picture">
+            <p id="pictext" style="display: none;">PROFILE PICTURE</p>
+        </section>
+
+        <section class="paragragh">
+            <p class="intro">Hi, my name is Prashant Pandey. I am a software development student at the Bow Valley College. I like playing basketball.
+                I am from India and came to Canada for excellent studies here and to explore different cultures in Canada. I like the weather here and the city in itself is so beautiful.
+            </p>
+            <br>
+            <p class="intro">
+                This is my assignment for one of my course in which i have my personal information with some other navigation tabs like temperature calculator, grade converter and information about staff in a sorted way. Thank you so much fpr visiting the page. 
+            </p>
         </section>
     </main>
     <footer>
-        <p>&copy; Your Name - 2024</p>
+        <p>&copy; Prashant Pandey 2024</p>
+
+        <p id="datetime"></p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

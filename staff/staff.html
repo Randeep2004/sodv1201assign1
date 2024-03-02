@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,18 @@
     <link rel="stylesheet" href="styles.css">
     <script src="staff.js" defer></script>
 </head>
+
 <body>
     <h1>Staff</h1>
-    <button onclick="sortBy('name')">Sort by Name</button>
-    <button onclick="sortBy('salary')">Sort by Salary</button>
+    <ul class="buttons"> <button onclick="sortByEmployee('PersonSalary')" class="salary">Sort by Salary</button>
+        <button onclick="sortByEmployee('PersonName')" class="name">Sort by Name</button>
+        
+    </ul>
     <ul id="staff-list"></ul>
     <footer>
-        <p>&copy; Randeep Singh Deol @ 2024</p>
+        <p>&copy; Prashant pandey - 2024</p>
+        <p id="datetime"></p>
     </footer>
 </body>
+
 </html>
